@@ -2,7 +2,7 @@
 
 Catena is a chain of craters.
 
-`Meteor, AngularJS, Angular-UI, Angular-Material, Velocity, Jasmine & NightWatch out of the box.`
+`Meteor, AngularJS, Angular-UI, Angular-Material, User handling, Velocity, Jasmine & NightWatch out of the box.`
 
 ## Prerequisites
 
