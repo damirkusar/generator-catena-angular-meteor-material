@@ -93,6 +93,20 @@ or
 yo catena:module "new Module"
 ```
 
+### Create Angular Module (Client)
+
+This module creates the angular module and tests skeletons for client and nightWatch.
+
+```bash
+yo catena:angular-module newModule
+```
+
+or
+
+```bash
+yo catena:angular-module "new Module"
+```
+
 ## Testing
 
 This project uses [Velocity][velocity], [Jasmine][jasmine] & [NightWatch][nightWatch] for testing.
