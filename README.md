@@ -68,9 +68,30 @@ Now browse to the app at `http://localhost:3000`.
 
 ### Demo Module
 
-If you have selected that you want to generate a demo module, the tweet module in client and server is created. You can browse it via. To create a tweet, you have to be logged in. Either create a new one, or use the admin user which was created on first startup. 
+If you have selected that you want to generate a demo module, the tweet module in client and server is created. You can browse it via. To create a tweet, you have to be logged in. Either create a new one, or use the admin user which was created on first startup.
 
 `http://localhost:3000/tweets`.
+
+## Sub-Generators
+
+As soon you have created your application, you can create modules & angular modules.
+
+For all Sub-Generators you will have to provide a name.
+You can do that by a single word or if you have more words add it between ""
+
+### Create Module (Client & Server)
+
+This module creates the angular module, a default collection, server code and tests skeletons.
+
+```bash
+yo catena:module newModule
+```
+
+or
+
+```bash
+yo catena:module "new Module"
+```
 
 ## Testing
 
