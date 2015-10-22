@@ -1,47 +1,138 @@
-# generator-catena-generator [![Build Status](https://secure.travis-ci.org/damirkusar/generator-catena-generator.png?branch=master)](https://travis-ci.org/damirkusar/generator-catena-generator)
+# Catena - the yeoman-generator for fullstack AngularJS & Meteor apps
 
-> [Yeoman](http://yeoman.io) generator
+Catena is a chain of craters.
+
+`Meteor, AngularJS, Angular-UI, Angular-Material, Velocity, Jasmine & NightWatch out of the box.`
+
+## Prerequisites
+
+To run a [Meteor][meteor] application, we have to install Meteor on our machine.
+
+On Mac & Linux you can do this:
+```bash
+curl https://install.meteor.com/ | sh
+```
+
+and on Windows, install it via the official [Meteor installer][meteorinstaller]
 
 
-## Getting Started
+To clone the repository, you will need git. You can download and install git from [http://git-scm.com/](http://git-scm.com/).
 
-### What is Yeoman?
+To be able to install the node packages, you will need to install node.js and its package manager (npm).
+You can download and install node.js from [http://nodejs.org/](http://nodejs.org/).
 
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
+You will also need to have yeoman installed:
 
 ```bash
 npm install -g yo
 ```
 
-### Yeoman Generators
-
-Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
-
-To install generator-catena-generator from npm, run:
+and starrynight to run our browser tests:
 
 ```bash
-npm install -g generator-catena-generator
+npm install -g starrynight
 ```
 
-Finally, initiate the generator:
+## Getting Started
+
+To get started, just install the catena generator & run it.
 
 ```bash
-yo catena generator
+npm install -g generator-catena
 ```
 
-### Getting To Know Yeoman
+### Create new project with the Catena Generator
 
-Yeoman has a heart of gold. He's a person with feelings and opinions, but he's very easy to work with. If you think he's too opinionated, he can be easily convinced.
+To create a new project create an empty folder and change directory
 
-If you'd like to get to know Yeoman better and meet some of his friends, [Grunt](http://gruntjs.com) and [Bower](http://bower.io), check out the complete [Getting Started Guide](https://github.com/yeoman/yeoman/wiki/Getting-Started).
+```bash
+mkdir myNewProject
+cd myNewProject
+```
 
+then run the generator and follow the questions.
+
+```bash
+yo catena
+```
+
+### Run the Application
+
+To start your new project, simply run Meteor. Meteor will install all dependencies and run your project.
+
+```bash
+meteor
+```
+
+Now browse to the app at `http://localhost:3000`.
+
+## Testing
+
+This project uses [Velocity][velocity], [Jasmine][jasmine] & [NightWatch][nightWatch] for testing.
+
+### Running Jasmine Tests
+
+Since [Meteor][meteor] & our application uses [Velocity][velocity], the [Jasmine][jasmine] tests are run automatically. You will recognize a dot in the upper right corner.
+
+### Running NightWatch Tests
+
+Our application uses also NightWatch for browser automated tests. I have setup NightWatch with starrynight, so to run it, we run this command in another terminal window. Your application should be running with Meteor.
+
+```bash
+starrynight run-tests --framework nightwatch
+```
+
+## Feedback & Improvements
+
+If you miss something or you think i should change or add some feature, please let me know.
+
+## Donation
+
+If you like this seed and you think it is worth to donate something, please feel free to do that via the following link:
+
+[Donate via Paypal][donate]
+
+## Contact
+
+For more information & contact form please check out [http://kusar.ch][kusar] or [http://damirkusar.ch][damirkusar]
 
 ## License
+The MIT License (MIT)
 
-MIT
+Copyright (c) 2015 Damir Kusar: damir@kusar.ch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+
+
+
+[git]: http://git-scm.com/
+[bower]: http://bower.io
+[npm]: https://www.npmjs.org/
+[node]: http://nodejs.org
+[protractor]: https://github.com/angular/protractor
+[jasmine]: http://jasmine.github.io
+[velocity]: https://velocity.readme.io
+[nightWatch]: http://nightwatchjs.org
+[meteor]: https://www.meteor.com
+[meteorinstaller]: https://install.meteor.com/windows
+[donate]: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=damir%40kusar%2ech&lc=US&item_name=Damir%20Kusar&currency_code=USD&bn=PP-DonationsBF%3abtn_donate_LG%2egif%3aNonHosted
+[kusar]: http://kusar.ch/
+[damirkusar]: http://damirkusar.ch/
