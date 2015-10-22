@@ -9,3 +9,4 @@ tmp
 dist
 npm-debug.log
 todo
+.npmignore
