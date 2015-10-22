@@ -137,7 +137,7 @@ starrynight run-tests --framework nightwatch
 ```bash
 meteor --test
 ```
-- It takes some time to start the mirrors, it's faster for unit test than for integration tests
+- It takes some time to start the mirrors, it's faster for unit tests than for integration tests
 
 ## Feedback & Improvements
 
