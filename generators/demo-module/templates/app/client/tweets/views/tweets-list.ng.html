@@ -1,0 +1,36 @@
+<md-content class="topSpace" layout="row">
+  <span flex></span>
+    <div layout="column" flex="50">
+      <div layout="column">
+        <md-input-container>
+          <label>Search</label>
+          <input type="text" ng-model="search"/>
+        </md-input-container>
+      </div>
+      <form layout="row" ng-show="$root.currentUser">
+        <md-button class="md-fab" aria-label="add new tweet" ng-click="add(newTweet)">
+          <md-icon md-font-set="material-icons"> add </md-icon>
+        </md-button>
+        <md-input-container flex>
+          <label>New Tweet</label>
+          <input type="text" ng-model="newTweet.message"/>
+        </md-input-container>
+        <div flex="10">
+          <md-checkbox ng-model="newTweet.public" aria-label="Checkbox">
+            Public
+          </md-checkbox>
+        </div>
+      </form>
+
+      <md-content class="md-padding">
+        <div ng-repeat="tweet in tweets">
+          <md-card>
+            <md-card-content>
+              <p class="ma-message">{{tweet.message}}</p>
+            </md-card-content>
+          </md-card>
+        </div>
+      </md-content>
+    </div>
+  <span flex></span>
+</md-content>

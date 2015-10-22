@@ -66,6 +66,12 @@ meteor
 
 Now browse to the app at `http://localhost:3000`.
 
+### Demo Module
+
+If you have selected that you want to generate a demo module, the tweet module in client and server is created. You can browse it via. To create a tweet, you have to be logged in. Either create a new one, or use the admin user which was created on first startup. 
+
+`http://localhost:3000/tweets`.
+
 ## Testing
 
 This project uses [Velocity][velocity], [Jasmine][jasmine] & [NightWatch][nightWatch] for testing.

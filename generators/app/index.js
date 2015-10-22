@@ -43,6 +43,7 @@ var CatenaGenerator = yeoman.generators.Base.extend({
       this.addDemoModule = this.props.addDemoModule;
 
       this.convertedAppName = s(this.appName).humanize().classify().decapitalize().value();
+      this.config.set('appName', this.convertedAppName);
 
       done();
     }.bind(this));
@@ -73,15 +74,14 @@ var CatenaGenerator = yeoman.generators.Base.extend({
       done();
     });
   },
-  // generateDemoModule: function() {
-  //     if (this.addDemoModule) {
-  //         var done = this.async();
-  //         this.invoke("catena:tweets", {args: ["Demo"]}, function(){
-  //             done();
-  //         });
-  //     }
-  // }
-
+  generateDemoModule: function() {
+      if (this.addDemoModule) {
+          var done = this.async();
+          this.invoke("catena:demo-module", {args: ['']}, function(){
+              done();
+          });
+      }
+  }
 });
 
 module.exports = CatenaGenerator;
