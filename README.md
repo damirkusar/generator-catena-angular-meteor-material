@@ -123,6 +123,21 @@ Our application uses also NightWatch for browser automated tests. I have setup N
 starrynight run-tests --framework nightwatch
 ```
 
+## FAQ
+
+### Mac OS
+- If you are using Mac OS X El Capitan, be sure you have installed all updates from the App Store.
+
+#### Why can I not run my NightWatch tests?
+- Try to install and start Xcode from the App Store: https://itunes.apple.com/ch/app/xcode/id497799835?mt=12
+- Update your Java version from: https://support.apple.com/kb/DL1572?locale=en_US or https://www.java.com/de/
+
+#### UI does not update my Jasmine test and I don't know if they are run successfully?
+- Try just execute the tests with:
+```bash
+meteor --test
+```
+
 ## Feedback & Improvements
 
 If you miss something or you think i should change or add some feature, please let me know.
