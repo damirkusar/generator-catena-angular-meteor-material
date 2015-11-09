@@ -77,7 +77,7 @@ var CatenaGenerator = yeoman.generators.Base.extend({
   generateDemoModule: function() {
       if (this.addDemoModule) {
           var done = this.async();
-          this.invoke("catena:demo-module", {args: ['']}, function(){
+          this.invoke("catena-angular-meteor-material:demo-module", {args: ['']}, function(){
               done();
           });
       }

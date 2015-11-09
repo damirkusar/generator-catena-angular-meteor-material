@@ -1,6 +1,6 @@
 {
-  "name": "generator-catena",
-  "version": "1.3.3",
+  "name": "generator-catena-angular-meteor-material",
+  "version": "2.0.0",
   "description": "Yeoman generator for Meteor and AngularJS",
   "license": "MIT",
   "main": "app/index.js",
