@@ -1,4 +1,6 @@
-# Catena - the yeoman-generator for fullstack AngularJS & Meteor apps
+# DEPRECATED - NOT UNDER DEVELOPMENT ANYMORE
+
+## Catena - the yeoman-generator for fullstack AngularJS & Meteor apps
 
 Catena is a chain of craters.
 
