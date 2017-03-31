@@ -6,7 +6,7 @@ Catena is a chain of craters.
 
 `Meteor, AngularJS, Angular-UI, Angular-Material, User handling, Velocity, Jasmine & NightWatch out of the box.`
 
-## Prerequisites
+## Prerequisites 
 
 To run a [Meteor][meteor] application, we have to install Meteor on our machine.
 
